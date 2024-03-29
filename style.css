@@ -48,17 +48,17 @@ body {
   top: -50px;
   left: 0;
   animation-name: drive;
-  animation-duration: 4s;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 /*// KEYFRAMES //*/
 
 @keyframes drive {
   from {
-    transform: translateX(0);
+    transform: translateX(-200px);
   }
   to {
-    transform: translateX(1420px);
+    transform: translateX(1550px);
   }
 }
