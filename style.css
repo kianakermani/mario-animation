@@ -47,22 +47,16 @@ body {
   position: absolute;
   top: -60px;
   left: 0;
-  animation-name: drive;
-  animation-duration: 3.5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+
+  animation: drive 3s both infinite linear, jump 0.3s 1.2s ease;
 }
 
 .luigi {
   position: absolute;
   top: 50px;
   left: 0;
-  animation-name: drive;
-  animation-duration: 5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+
+  animation: drive 5s both infinite linear;
 }
 
 .cloud {
@@ -98,5 +92,17 @@ body {
   }
   to {
     left: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: -60px;
+  }
+  50% {
+    top: -120px;
+  }
+  100% {
+    top: -60px;
   }
 }
