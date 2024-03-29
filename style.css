@@ -49,6 +49,8 @@ body {
   left: 0;
   animation-name: drive;
   animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 /*// KEYFRAMES //*/
 
@@ -57,6 +59,6 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(1500px);
+    transform: translateX(1420px);
   }
 }
